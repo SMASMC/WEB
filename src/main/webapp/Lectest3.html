@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+
+	<form action="#" method="post">
+		<table>
+
+			<!-- 	post라고 하면 주소록에 나의 데이터 전송을 안보이게 할 수 있음 -->
+			<!-- 	get은 주소록에 데이터가 날아가는 것을 보여줌 -->
+<!-- 			tr은 테이블 한줄 td는 테이블 한칸 -->
+			
+			<tr>
+				<td>이름:</td>
+				<td><input type="text" name="userName"><br></td>
+			</tr>
+			<tr>
+				<td>아이디:</td>
+				<td> <input type="text" name="userId">
+				</td>
+			</tr>
+			<tr>
+				<td>비밀번호:</td>
+				<td>
+				<input type="password" name="userPassword">
+				<br>
+				</td>
+				</tr>
+				<!-- 		password는 작성한 텍스트를 가려줌 -->
+			
+			<tr>
+				<td>연락처:</td>
+				<td><input type="text" name="phone1" size="5">-
+				<input type="text" name="phone2" size="5">-
+				<input type="text" name="phone3" size="5"></td>
+					<!-- 		size로 작성하는 텍스트의 크기를 지정해줌 -->
+			</tr>
+			<tr>
+				<td>사진:</td> 
+				<td><input type="file" name="picture"><br>
+				</td>
+			</tr>
+			<!-- 		file로 파일을 가져올 수 있게 함 -->
+			<tr>
+				<td>성별 구분:</td> 
+				<td><input type="radio" name="gender" value="man"
+					>남, <input type="radio" name="gender"
+					value="man" >여<br>
+				</td>
+			</tr>
+			<tr>
+				<td>사용언어:</td> 
+				<td><input type="checkbox" name="lang" value="kor"
+					checked="checked">한글 <input type="checkbox" name="lang"value="eng">영어 
+					<input type="checkbox"name="lang" value="jpn" >일본어
+					<input type="checkbox" name="lang" value="chn" >중국어<br>
+				</td>
+			</tr>
+
+			<tr>
+				<td>자기소개:</td> 
+				<td><textarea rows="5" cols="20">간단하게 입력하세요</textarea> <br>
+					국적: <select>
+						<option>Korea</option>
+						<option>USA</option>
+						<option>Japan</option>
+						<option>China</option>
+				</select><br> <!-- 		option이 콤보박스 역할을 함 -->
+				</td>
+			</tr>
+			<tr>
+				<td>좋아하는 음식:</td> 
+				<td><select multiple="multiple">
+						<option>김치</option>
+						<option>불고기</option>
+						<option>파전</option>
+						<option>비빔밥</option>
+						<option>냉면</option>
+						<option>순대</option>
+				
+				</select><br> <input type="submit" name="okBtn" value="OK"> <!-- 	위에 있는 것을 제출하다 submit -->
+				</td>
+			</tr>
+
+
+		</table>
+	</form>
+
+
+
+</body>
+</html>
