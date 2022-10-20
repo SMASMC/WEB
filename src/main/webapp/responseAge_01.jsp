@@ -9,7 +9,7 @@
 <body>
 
 
-<form action="responseAge_03.jsp"method="post">
+<form action="responseAge_02.jsp"method="post">
 당신의 나이는?
 <input type="text" name ="age"size="10">
 <input type="submit"value="확인">
